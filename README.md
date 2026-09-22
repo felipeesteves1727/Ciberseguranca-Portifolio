@@ -2,37 +2,45 @@
 
 ## 📌 Introdução
 
-Este projeto apresenta uma análise de tráfego de rede realizada utilizando o Wireshark.
+Este projeto apresenta uma análise de tráfego de rede realizada
+utilizando o Wireshark.
 
-O objetivo é compreender na prática como diferentes protocolos de rede funcionam, analisar pacotes capturados e identificar informações presentes nas comunicações de rede.
+O objetivo foi observar, na prática, diferentes etapas da
+comunicação de rede, analisando consultas DNS, estabelecimento
+de conexões TCP e início de uma comunicação protegida por TLS.
 
 ## 🎯 Objetivos
 
 - Analisar tráfego de rede
-- Identificar protocolos
+- Identificar protocolos de comunicação
 - Analisar consultas DNS
-- Observar conexões TCP
-- Identificar endereços IP
-- Compreender o fluxo de comunicação
+- Observar o estabelecimento de conexões TCP
+- Identificar endereços IP e portas
+- Observar o início de uma conexão TLS
+- Documentar os resultados utilizando evidências reais
 
-## 🛠️ Ferramentas
+## 🛠️ Ferramenta utilizada
 
 - Wireshark
-- TCP/IP
+
+## 🌐 Conceitos analisados
+
 - DNS
-- TCP
 - UDP
-- HTTP/HTTPS
+- TCP
+- TCP Three-Way Handshake
+- TLS 1.3
+- HTTPS
+- Endereçamento IP
+- Portas de comunicação
 
-## 🔬 Metodologia
+---
 
-Foi realizada uma captura de tráfego de rede durante uma sessão de navegação.
+# 🔬 Análises realizadas
 
-Após a captura, foram utilizados filtros do Wireshark para identificar e analisar diferentes tipos de tráfego.
+## 1. Análise DNS
 
-### Filtro DNS
+Foi identificada uma consulta DNS para:
 
 ```text
-dns
-tcp
-http
+clientservices.googleapis.com
