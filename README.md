@@ -67,3 +67,6 @@ SYN
 SYN + ACK
 ↓
 ACK
+
+
+```text
