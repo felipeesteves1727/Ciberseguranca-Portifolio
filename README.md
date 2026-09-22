@@ -62,7 +62,7 @@ Foi observada uma sequência de estabelecimento de conexão TCP composta por tr�
 
 ```text
 SYN
- ↓
+↓
 SYN + ACK
- ↓
+↓
 ACK
