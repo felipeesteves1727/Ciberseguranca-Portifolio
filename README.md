@@ -73,3 +73,26 @@ TCP
 TLS 1.3
  ↓
 Comunicação protegida
+- **Origem:** `192.168.18.10`
+- **Destino:** `192.168.18.1`
+- **Protocolo:** UDP
+- **Porta de destino:** 53
+
+A análise demonstra uma consulta DNS realizada pelo computador para o servidor DNS da rede.
+
+### 📸 Evidência
+
+![DNS Query](./screenshots/01-dns-query.png)
+
+---
+
+## 2. Análise do TCP Three-Way Handshake
+
+Foi observada uma sequência de estabelecimento de conexão TCP composta por três etapas:
+
+```text
+SYN
+↓
+SYN + ACK
+↓
+ACK
