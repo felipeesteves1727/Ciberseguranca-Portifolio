@@ -40,13 +40,14 @@ O objetivo foi observar, na prática, diferentes etapas da comunicação de rede
 Foi identificada uma consulta DNS para:
 
 `clientservices.googleapis.com`
+---
 
-A comunicação observada apresentou:
+### 📡 Dados da comunicação
 
-- **Origem:** `192.168.18.10`
-- **Destino:** `192.168.18.1`
-- **Protocolo:** UDP
-- **Porta de destino:** 53
+- Origem: `192.168.18.10`
+- Destino: `192.168.18.1`
+- Protocolo: UDP
+- Porta de destino: 53
 
 A análise demonstra uma consulta DNS realizada pelo computador para o servidor DNS da rede.
 
