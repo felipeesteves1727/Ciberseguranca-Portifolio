@@ -60,7 +60,7 @@ A análise demonstra uma consulta DNS realizada pelo computador para o servidor 
 
 Foi observada uma sequência de estabelecimento de conexão TCP composta por três etapas:
 
-```text
+
 SYN
 ↓
 SYN + ACK
