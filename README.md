@@ -96,3 +96,40 @@ SYN
 SYN + ACK
 ↓
 ACK
+---
+
+## 3. Análise TLS 1.3
+
+Foi observado um pacote TLS 1.3 do tipo:
+
+`Client Hello`
+
+A comunicação observada apresentou:
+
+- **Origem:** `192.168.18.10`
+- **Destino:** `52.123.244.228`
+- **Porta de origem:** 54202
+- **Porta de destino:** 443
+- **Protocolo:** TLS 1.3
+- **SNI:** `ecs.office.com`
+
+O Client Hello representa o início da negociação TLS observada na captura.
+
+### 📸 Evidência
+
+![TLS 1.3 Client Hello](./screenshots/03-tls-client-hello.png)
+
+---
+
+# 📊 Resultados
+
+Durante o laboratório foi possível observar uma sequência de comunicação envolvendo diferentes protocolos:
+
+```text
+DNS
+ ↓
+TCP
+ ↓
+TLS 1.3
+ ↓
+Comunicação protegida
