@@ -66,3 +66,10 @@ SYN
 SYN + ACK
 ↓
 ACK
+DNS
+ ↓
+TCP
+ ↓
+TLS 1.3
+ ↓
+Comunicação protegida
