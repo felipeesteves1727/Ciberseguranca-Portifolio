@@ -66,7 +66,7 @@ SYN
 SYN + ACK
 ↓
 ACK
-
+```
 ```markdown
 A comunicação observada envolveu:
 
