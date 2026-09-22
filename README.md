@@ -2,12 +2,9 @@
 
 ## 📌 Introdução
 
-Este projeto apresenta uma análise de tráfego de rede realizada
-utilizando o Wireshark.
+Este projeto apresenta uma análise de tráfego de rede realizada utilizando o Wireshark.
 
-O objetivo foi observar, na prática, diferentes etapas da
-comunicação de rede, analisando consultas DNS, estabelecimento
-de conexões TCP e início de uma comunicação protegida por TLS.
+O objetivo foi observar, na prática, diferentes etapas da comunicação de rede, analisando consultas DNS, estabelecimento de conexões TCP e início de uma comunicação protegida por TLS.
 
 ## 🎯 Objetivos
 
@@ -42,5 +39,30 @@ de conexões TCP e início de uma comunicação protegida por TLS.
 
 Foi identificada uma consulta DNS para:
 
+`clientservices.googleapis.com`
+
+A comunicação observada apresentou:
+
+- **Origem:** `192.168.18.10`
+- **Destino:** `192.168.18.1`
+- **Protocolo:** UDP
+- **Porta de destino:** 53
+
+A análise demonstra uma consulta DNS realizada pelo computador para o servidor DNS da rede.
+
+### 📸 Evidência
+
+![DNS Query](./screenshots/01-dns-query.png)
+
+---
+
+## 2. Análise do TCP Three-Way Handshake
+
+Foi observada uma sequência de estabelecimento de conexão TCP composta por três etapas:
+
 ```text
-clientservices.googleapis.com
+SYN
+↓
+SYN + ACK
+↓
+ACK
