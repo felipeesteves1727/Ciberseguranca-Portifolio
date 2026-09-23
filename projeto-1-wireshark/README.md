@@ -149,7 +149,7 @@ Como evolução deste projeto, pretendo:
 
 # 👤 Autor
 
-**Felipe Silva**
+**Felipe Esteves**
 
 Estudante de Redes de Computadores
 
